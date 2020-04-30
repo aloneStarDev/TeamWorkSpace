@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #81c7b0;
+}
+
+header .head-left {
+  padding: 10px 30;
+}
+
+header .head-left .title {
+  display: inline;
+}
+
+header .head-left .title h1 {
+  display: inline;
+}
+
+header .head-right {
+  position: absolute;
+  right: 60px;
+  top: 10px;
+}
+
+header .head-right img {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+header .head-right img:hover {
+  cursor: pointer;
+  transition: 1s;
+  transform: rotate(90deg);
+}
+
+#close {
+  display: block;
+  position: absolute;
+  transform: translateX(10px);
+}
+
+#close:hover {
+  cursor: pointer;
+  color: red;
+}
+
+@media only screen and (min-width: 768px) {
+  #topMenu {
+    background: lightgray;
+  }
+  #topMenu ul li {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 3%;
+  }
+  #topMenu ul li:hover {
+    cursor: pointer;
+    padding: 12px 3%;
+    border-bottom: 2px solid red;
+  }
+  .activeMenuItem {
+    padding: 8px 3%;
+    border-bottom: 4px solid cyan;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #topMenu {
+    background: lightgray;
+  }
+  #topMenu ul {
+    display: none;
+  }
+  #topMenu ul li {
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+  }
+  #topMenu ul li:hover {
+    cursor: pointer;
+    background: linear-gradient(90deg, lightblue, cyan, lightblue);
+  }
+  .activeMenuItem {
+    background: linear-gradient(90deg, #32c5f7, cyan, #32c5f7);
+  }
+}
+/*# sourceMappingURL=main.css.map */
