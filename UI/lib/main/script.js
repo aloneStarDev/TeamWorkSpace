@@ -23,3 +23,14 @@ window.onresize = function(){
     else
         $("#topMenu ul").hide();
 }
+let slid=2;
+function slide(num){
+    if(slid != num)
+    {
+        $("#sl-"+num).addClass("active");
+        $("#sl-"+slid).removeClass("active");
+        $("#dot-"+num).addClass("dot-active");
+        $("#dot-"+slid).removeClass("dot-active");
+        slid=num;
+    }
+}
